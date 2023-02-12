@@ -1,60 +1,144 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<style>
-    h3{
-        text-align: center;
-        background-color: black;
-        color: white;
-    }
-    img {
-    display: block;
-    margin-left:  auto;
-    margin-right: auto;
-    }
-    a {
-        color: aquamarine;
-        background-color:burlywood;
-        text-decoration: none;
-        text-align: center;
-        
-    }
-    a:hover{
-        color: cornflowerblue;
-    }
-</style>
+    <link rel="stylesheet" href="style.css">
     <title>Assigment_01</title>
 </head>
-<body>
-    <h3> using img tag for image </h3>
-    <img src="Assigment_01_pic_01.jpg" alt="This is a image" width="50%"> 
 
-    <h3> using a tag for link </h3> <br>
-    <a href="https://makecv.me/" target="_blank"> This is my website </a>
-    
-    <h3> Using P tag for paragraph and br tag for line brack</h3>
+<body>
+    <h3><span> Using img tag for image </span></h3>
+    <div class="image">
+        <img src="Assigment_01_pic_01.jpg" alt="This is a image" width="50%">
+    </div>
+
+
+    <h3><span> Using a tag for link </span> </h3> <br>
+    <a href="https://makecv.me/" target="_blank"><span> This is my website </span></a> <br>
+
+    <h3><span> Using P tag for paragraph and br tag for line brack </span></h3>
     <p> HTML stands for Hyper Text Markup Language. <br>
         HTML is the standard markup language for creating Web pages. <br>
         HTML describes the structure of a Web page. <br>
         HTML consists of a series of elements. HTML elements
-         tell the browser how to display the content.</p><br>
-    
-    
-     <h3> Ordered and Unordered List</h3>   
+        tell the browser how to display the content.</p><br>
+
+
+    <h3><span> Ordered and Unordered List </span></h3>
     <ol>
         <li>Phone</li>
         <ul>
             <li>oppo</li>
             <li>samsung</li>
-        </ul></ol>
-    <ol>
+        </ul>
+
         <li>item</li>
-        <ul> 
+        <ul>
             <li>car</li>
             <li>bus</li>
             <li>pen</li>
-        </ul></ol>
-           
+        </ul>
+    </ol>
+    <h3><span> Create table </span></h3>
+    <table>
+        <tr>
+            <th style="background: yellowgreen;">Name</th>
+            <th style="background: yellowgreen;">secmester</th>
+            <th style="background: yellowgreen;">CGPA</th>
+        </tr>
+        <tr>
+            <td>Ali</td>
+            <td>7th</td>
+            <td>3.5</td>
+        </tr>
+        <tr>
+            <td>Bilal</td>
+            <td>7th</td>
+            <td>3.4</td>
+        </tr>
+        <tr>
+            <td>Awais</td>
+            <td>4th</td>
+            <td>3.0</td>
+        </tr>
+        <tr>
+            <td>Hamza</td>
+            <td>3th</td>
+            <td>3.2</td>
+        </tr>
+        <tr>
+            <td>Naveed</td>
+            <td>4th</td>
+            <td>3.6</td>
+        </tr>
+        <tr>
+            <td>Tawab</td>
+            <td>7th</td>
+            <td>3.7</td>
+        </tr>
+    </table>
+    <h3><span>The form element</span></h3>
+    <form>
+        <div class="form_container">
+            <div>
+                <label for="fname">First name: </label>
+                <input type="text" id="fname" name="fname">
+            </div>
+            <div><label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname">
+            </div>
+            <div><label for="email"> Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div>
+                <label for="pwd">Password:</label>
+                <input type="password" id="pwd" name="pwd" minlength="8">
+            </div>
+            <p style="font-weight:bolder;">
+                Select Language:
+            </p>
+            <div>
+                <div class="empty">
+                </div>
+                <div>
+                    <label for="html"> Html</label>
+                    <input type="checkbox" name="html">
+                </div>
+            </div>
+            <div>
+                <div class="empty"></div>
+                <div>
+                    <label for="java"> Java</label>
+                    <input type="checkbox" name="java">
+                </div>
+            </div>
+            <div>
+                <div class="empty"></div>
+                <div>
+                    <label for="css"> CSS</label>
+                    <input type="checkbox" name="css">
+                </div>
+            </div>
+            <p style="font-weight:bolder;">
+                Select Gander:
+            </p>
+            <div>
+                <div class="empty"></div>
+                <div>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gander" id="male">
+                </div>
+            </div>
+            <div>
+                <div class="empty"></div>
+                <div>
 
+                    <label for="male">Female</label>
+                    <input type="radio" name="gander" id="female">
+                </div>
+            </div>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>

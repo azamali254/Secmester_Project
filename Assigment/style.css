@@ -1,0 +1,72 @@
+h3 {
+    text-align: center;
+}
+h3 span {
+    color: white;
+    background-color:lightblue;
+}
+.image {
+    background-color: beige;
+
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2%;
+}
+a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+a span {
+    color: blue;
+    background-color: yellowgreen;
+}
+a:hover span {
+    text-decoration: underline;
+    background-color: wheat;
+    color: red;
+}
+
+table,
+th,
+td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+table {
+    text-align: center;
+    width: 100%;
+}
+.form_container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form_container div {
+    flex-basis: 100;
+    display: flex;
+}
+
+.checkbox_lg {
+    display: flex;
+    gap: 10px;
+}
+
+.form_container div input {
+    flex-basis: 20%;
+}
+
+.form_container div label {
+    flex-basis: 10%;
+}
+
+.form_container div .empty {
+    flex-basis: 10%;
+}
