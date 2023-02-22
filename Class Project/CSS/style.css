@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto',Helvetica,Arial,Verdana,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+/* Header Start */
+#header-top{
+    border-bottom: 1px solid #ecf2fd;
+    width: 100%;
+    height: 100px;
+}
+.content-wrapper{
+    min-width: auto;
+    padding: 25px 20px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.content-wrapper .container{
+    background-color: rgba(255,255,255,0.3);
+    position: relative;
+    z-index: 100;
+}
+
+.content-wrapper .container .wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+#logo {
+    background: transparent url('/images/Visually-Rock-Logo.svg') no-repeat 0 0;
+    width: 166px;
+    height: 43px;
+    background-size: 100% 100%;
+    margin-top: 3px;
+    display: block;
+    float: left;
+}
+.menu-wrapper{
+    float: left;
+    margin-left: 30px;
+}
+.menu-wrapper .menu{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+.navbar .menu{
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+.menu-wrapper ul.menu li>.url {
+    padding: 15px 5px;
+    margin: 0 5px;
+    font-family: 'Roboto',Helvetica,Arial,Verdana,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    display: block;
+    text-decoration: none;
+    transition: all .2s ease;
+    cursor: pointer;
+    position: relative;
+}
+.menu-wrapper ul.menu li>.url:hover {
+    color: #3576ed;
+    cursor: pointer;
+}
+.menu-wrapper ul.menu>li.has-submenu ul.submenu{
+    list-style: none;
+    position: absolute;
+    top: 44px;
+    left: 0;
+    transition: all .2s ease;
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #fff;
+    padding: 5px 0;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 5%);
+}
+ul.menu li>.url:hover ul.submenu {
+    opacity: 1;
+    z-index: 10000;
+    visibility: visible;
+}
+.menu-wrapper ul.menu>li.has-submenu ul.submenu li{
+    border-bottom: 1px solid #FFFFFF;
+}
+.menu-wrapper ul.menu>li.has-submenu ul.submenu.products{
+    width: 270px;
+}
+
+.menu-wrapper ul.menu li>a{
+    padding: 15px 5px;
+    margin: 0 5px;
+    font-family: 'Roboto',Helvetica,Arial,Verdana,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #25292c;
+    display: block;
+    text-decoration: none;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+.menu-wrapper ul.menu li>a:hover{
+    color: #3576ed;
+}
+
+.navbar .menu-btn-wrapper {
+    float: right;
+    margin-top: 4px;
+}
+.navbar .menu-btn-wrapper ul.menu>li {
+    display: inline-block;
+}
+.navbar .menu-btn-wrapper ul.menu>li .header-login {
+    font-family: 'Roboto',Helvetica,Arial,Verdana,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    border-radius: 8px;
+    background-clip: padding-box;
+    box-sizing: border-box;
+    padding: 0 25px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all .2s ease;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3576ed;
+    border-color: #3576ed;
+    margin-right: 10px;
+}
+.navbar .menu-btn-wrapper ul.menu>li .header-login:hover, .navbar .menu-btn-wrapper ul.menu>li .header-login:active{
+    background-color: #224c97;
+    border-color: #224c97;
+}
+.navbar .menu-btn-wrapper ul.menu>li .get-a-quote {
+    font-family: 'Roboto',Helvetica,Arial,Verdana,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    border-radius: 8px;
+    background-clip: padding-box;
+    box-sizing: border-box;
+    padding: 0 25px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all .2s ease;
+    text-decoration: none;
+    color: #3576ed;
+    border-color: #3576ed;
+    background-color: white;
+}
+
+/* Header End */
+
+/* Hero Header Start */
+#hero-header {
+    text-align: center;
+}
+#hero-header.talent-slider {
+    height: 615px;
+    padding-bottom: 75px;
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
+#hero-header .interactive-area {
+    width: calc((100% - 620px));
+    margin-right: 620px;
+    padding-top: 150px !important;
+    padding: 60px 0 0 40px;
+    max-width: 900px;
+    margin-left: auto;
+    text-align: left;
+}
+#hero-header .interactive-area .title {
+    font-family: 'Roboto',Arial,sans-serif;
+    font-style: normal;
+    color: #25292c;
+    font-size: 60px;
+    line-height: 64px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+#hero-header .interactive-area .subtitle {
+    color: #25292c;
+    font-family: 'Roboto',Arial,sans-serif;
+    font-style: normal;
+    line-height: 24px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+#hero-header a.get-quote{
+    font-family: 'Roboto',Helvetica,Arial,Verdana,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    border-radius: 8px;
+    background-clip: padding-box;
+    box-sizing: border-box;
+    padding: 0 25px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all .2s ease;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3576ed;
+    border-color: #3576ed;
+    margin-right: 10px;
+    width: 200px;
+    margin: 30px 10px 0;
+}
+#hero-header a.get-quote:hover, #hero-header a.get-quote:active {
+    background-color: #224c97;
+    border-color: #224c97;
+}
+#hero-header a.learn-more {
+    font-family: 'Roboto',Helvetica,Arial,Verdana,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    border-radius: 8px;
+    background-clip: padding-box;
+    box-sizing: border-box;
+    padding: 0 25px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all .2s ease;
+    text-decoration: none;
+    color: #3576ed;
+    border-color: #3576ed;
+    background-color: white;
+    width: 200px;
+    margin: 30px 10px 0;
+}
+#hero-header a.learn-more:hover {
+    color: #224c97;
+    border-color: #224c97;
+}
+
+#hero-header .next-section {
+    width: 50px;
+    height: 50px;
+    background: transparent url('/images/down.svg') repeat 0 0;
+    background-size: 100% 100%;
+    border: 0;
+    outline: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -25px;
+    cursor: pointer;
+}
+#hero-header .talent-image {
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+#hero-header .talent-image.videomakers {
+    background: transparent url('/images/videomakers@2x.jpg') no-repeat center center;
+    width: 620px;
+}
